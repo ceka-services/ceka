@@ -123,7 +123,6 @@ select:focus {
   text-align: right;
 }
 
-/* تصميم بطاقات الأفكار كما في الصورة */
 .pricing-card {
   width: 30%;
   margin: 15px;
@@ -287,4 +286,5 @@ select:focus {
     width: 90%;
     margin: 10px auto;
   }
+
 }
