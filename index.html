@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="ceka-logo.png">
+  <title>CEKA - Genetator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1> مُولِّد مشاريع التخرج الذكي - CEKA</h1>
+      <p>اختر معاييرك، واحصل على أفكار مبتكرة خلال ثوانٍ — بواسطة CEKA !</p>
+    </header>
+
+    <form id="projectForm">
+      <div class="form-group">
+        <label>التخصص:</label>
+        <select id="major">
+          <option value="">اختر...</option>
+          <option value="cs">هندسة حاسوب / علوم حاسوب</option>
+          <option value="is">نظم معلومات</option>
+          <option value="ai">ذكاء اصطناعي / تعلّم آلي</option>
+          <option value="ce">هندسة شبكات / أمن سيبراني</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>المستوى:</label>
+        <select id="level">
+          <option value="">اختر...</option>
+          <option value="beginner">مبتدئ</option>
+          <option value="intermediate">متوسط</option>
+          <option value="advanced">متقدم</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>نوع التطبيق:</label>
+        <select id="type">
+          <option value="">اختر...</option>
+          <option value="web">ويب</option>
+          <option value="mobile">هاتف</option>
+          <option value="desktop">سطح مكتب</option>
+          <option value="iot">IoT / أنظمة مدمجة</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>المجال:</label>
+        <select id="domain">
+          <option value="">اختر...</option>
+          <option value="education">تعليم</option>
+          <option value="health">صحة</option>
+          <option value="ecommerce">تجارة إلكترونية</option>
+          <option value="security">أمن</option>
+          <option value="social">مجتمع / تواصل</option>
+        </select>
+      </div>
+
+      <button type="submit" id="generateBtn"> ولّد الأفكار الآن</button>
+    </form>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
