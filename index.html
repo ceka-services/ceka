@@ -65,36 +65,12 @@
     <div id="results" class="results"></div>
   </div>
 
-  <!-- Umami Analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="b6440164-89a0-4b51-be22-3daafa6a811c"></script>
 
-
-<div id="visitor-counter" style="
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  color: white;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 9999;
-">
-  👁️ الزائر رقم: <span id="counter-value">جاري التحميل...</span>
-</div>
-
-<script>
-  let count = localStorage.getItem('visitCount') || 0;
-  count = parseInt(count) + 1;
-  localStorage.setItem('visitCount', count);
-  document.getElementById('counter-value').textContent = count.toLocaleString('ar-EG');
-</script>
   <script src="script.js"></script>
 </body>
 
 </html>
+
 
 
 
