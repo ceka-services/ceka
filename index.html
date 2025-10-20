@@ -68,7 +68,7 @@
   <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b6440164-89a0-4b51-be22-3daafa6a811c"></script>
 
-<!-- عرض العداد في الزاوية -->
+
 <div id="visitor-counter" style="
   position: fixed;
   bottom: 15px;
@@ -86,7 +86,6 @@
 </div>
 
 <script>
-  // Umami لا يُعيد العدد مباشرةً، لذا نستخدم LocalStorage كحل تسويقي بسيط
   let count = localStorage.getItem('visitCount') || 0;
   count = parseInt(count) + 1;
   localStorage.setItem('visitCount', count);
@@ -96,6 +95,7 @@
 </body>
 
 </html>
+
 
 
 
