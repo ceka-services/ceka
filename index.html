@@ -65,37 +65,9 @@
     <div id="results" class="results"></div>
   </div>
 
-  <div id="visitor-counter" style="
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  color: white;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 9999;
-  backdrop-filter: blur(4px);
-">
-  👁️ الزائر رقم: <span id="counter-value">...</span>
-</div>
-
-<script>
-  // عداد الزوار باستخدام CountAPI
-  fetch('https://api.countapi.xyz/hit/ceka-services-1/ceka-grad-generator')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('counter-value').textContent = data.value.toLocaleString('ar-EG');
-    })
-    .catch(() => {
-      document.getElementById('counter-value').textContent = '---';
-    });
-</script>
-
   <script src="script.js"></script>
 </body>
 
 </html>
+
 
